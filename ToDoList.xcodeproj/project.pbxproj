@@ -18,6 +18,8 @@
 		A9AAE37F28F845E5006A8BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AAE37E28F845E5006A8BE4 /* Assets.xcassets */; };
 		A9AAE38228F845E5006A8BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AAE38028F845E5006A8BE4 /* LaunchScreen.storyboard */; };
 		A9BE73B9290C65F0001E3D6D /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BE73B8290C65F0001E3D6D /* CategoryVC.swift */; };
+		A9D0999C293A4B6E001B323C /* gitignore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0999B293A4B6E001B323C /* gitignore.swift */; };
+		A9D0999E293A4BB7001B323C /* upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D0999D293A4BB7001B323C /* upload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		A9AAE38128F845E5006A8BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9AAE38328F845E5006A8BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9BE73B8290C65F0001E3D6D /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		A9D0999B293A4B6E001B323C /* gitignore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gitignore.swift; sourceTree = "<group>"; };
+		A9D0999D293A4BB7001B323C /* upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = upload.swift; sourceTree = "<group>"; };
 		AB3D0164C765E78EAB5E9B40 /* Pods_ToDoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BD8111A4E136196F210B11 /* Pods-ToDoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList.release.xcconfig"; path = "Target Support Files/Pods-ToDoList/Pods-ToDoList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +110,8 @@
 		A9AAE36928F845E4006A8BE4 = {
 			isa = PBXGroup;
 			children = (
+				A9D0999A293A4AED001B323C /* New Group2 */,
+				A9D09999293A4AD1001B323C /* New Group */,
 				A9AAE37428F845E4006A8BE4 /* ToDoList */,
 				A9AAE37328F845E4006A8BE4 /* Products */,
 				358EE256E7C3F7529C50F882 /* Pods */,
@@ -125,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				A9AAE37528F845E4006A8BE4 /* AppDelegate.swift */,
+				A9D0999B293A4B6E001B323C /* gitignore.swift */,
+				A9D0999D293A4BB7001B323C /* upload.swift */,
 				A9AAE37728F845E4006A8BE4 /* SceneDelegate.swift */,
 				A9184DE92902A77700FDB719 /* Controllers */,
 				A9184DEA2902A78100FDB719 /* Views */,
@@ -133,6 +141,20 @@
 				A9AAE38328F845E5006A8BE4 /* Info.plist */,
 			);
 			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		A9D09999293A4AD1001B323C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A9D0999A293A4AED001B323C /* New Group2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +274,9 @@
 			files = (
 				A97ACC58293777CA00BEC3D2 /* SwipeTableVC.swift in Sources */,
 				A9BE73B9290C65F0001E3D6D /* CategoryVC.swift in Sources */,
+				A9D0999C293A4B6E001B323C /* gitignore.swift in Sources */,
 				A9AAE37A28F845E4006A8BE4 /* ToDoListVC.swift in Sources */,
+				A9D0999E293A4BB7001B323C /* upload.swift in Sources */,
 				A9AAE37628F845E4006A8BE4 /* AppDelegate.swift in Sources */,
 				A94DB31F2934B1D700961694 /* Item.swift in Sources */,
 				A9AAE37828F845E4006A8BE4 /* SceneDelegate.swift in Sources */,
