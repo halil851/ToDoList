@@ -110,6 +110,8 @@
 		A9AAE36928F845E4006A8BE4 = {
 			isa = PBXGroup;
 			children = (
+				A9D0999B293A4B6E001B323C /* gitignore.swift */,
+				A9D0999D293A4BB7001B323C /* upload.swift */,
 				A9D0999A293A4AED001B323C /* New Group2 */,
 				A9D09999293A4AD1001B323C /* New Group */,
 				A9AAE37428F845E4006A8BE4 /* ToDoList */,
@@ -131,8 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				A9AAE37528F845E4006A8BE4 /* AppDelegate.swift */,
-				A9D0999B293A4B6E001B323C /* gitignore.swift */,
-				A9D0999D293A4BB7001B323C /* upload.swift */,
 				A9AAE37728F845E4006A8BE4 /* SceneDelegate.swift */,
 				A9184DE92902A77700FDB719 /* Controllers */,
 				A9184DEA2902A78100FDB719 /* Views */,
