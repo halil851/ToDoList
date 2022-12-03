@@ -199,7 +199,7 @@ class ToDoListVC: SwipeTableVC {
     
     func loadItems() {
         
-        todoItems = selectedCategory?.items.sorted(byKeyPath: "dateCreated", ascending: true)
+        todoItems = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
         
         tableView.reloadData()
     }
@@ -210,21 +210,25 @@ class ToDoListVC: SwipeTableVC {
 
 extension ToDoListVC: UISearchBarDelegate {
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
-        todoItems = todoItems?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "dateCreated", ascending: false)
-        tableView.reloadData()
-    }
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        loadItems()
         
         if searchBar.text?.count == 0 {
-            loadItems()
-            
-            // When tap the x button to clear all list, it dismiss the keyboard
-            DispatchQueue.main.async {
-                searchBar.resignFirstResponder()
-            }
+            disMissKeyboard()
+           
+        } else {
+            todoItems = todoItems?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "dateCreated", ascending: false)
+            tableView.reloadData()
+        }
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        disMissKeyboard()
+    }
+    
+    func disMissKeyboard (){
+        DispatchQueue.main.async {
+            self.searchBar.resignFirstResponder()
         }
     }
 }
