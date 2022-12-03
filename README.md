@@ -1,1 +1,5 @@
 # ToDoList
+
+## INSTALLATION
+
+* pod install
